@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Tour Packages</title>
+    <!-- Link to Tailwind CSS CDN for utility classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Link to external custom stylesheet -->
+    <link rel="stylesheet" href="winter.css">
+</head>
+<body>
+    
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Winter Adventures in India</h1>
+            <p>Explore snow-capped peaks, frozen lakes, and thrilling winter sports.</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <!-- Tour Card 1: Manali -->
+        <div class="tour-card">
+            <img src="manali.avif" alt="Manali during winter" class="card-image">
+            <div class="p-6">
+                <h2 class="card-title">Manali, Himachal Pradesh</h2>
+                <p class="card-description">The ultimate destination for snow lovers and adventure seekers. Enjoy paragliding, skiing, and trekking in the Solang Valley.</p>
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <span class="detail-label">Location:</span> Manali, HP
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Budget:</span> ₹25,000 - ₹40,000
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Transportation:</span> Volvo Bus from Delhi/Cab
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Sites:</span> Solang Valley, Rohtang Pass (Closed in heavy snow), Hadimba Temple
+                    </div>
+                </div>
+                <button class="book-btn" data-destination="Manali">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Tour Card 2: Gulmarg -->
+        <div class="tour-card">
+            <img src="j_and_k.avif" alt="Gulmarg skiing resort" class="card-image">
+            <div class="p-6">
+                <h2 class="card-title">Gulmarg, Jammu & Kashmir</h2>
+                <p class="card-description">Known as the 'Meadow of Flowers', Gulmarg transforms into a premium skiing and snowboarding paradise in winter.</p>
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <span class="detail-label">Location:</span> Gulmarg, J&K
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Budget:</span> ₹45,000 - ₹70,000
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Transportation:</span> Flight to Srinagar, then Cab/Jeep
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Sites:</span> Gulmarg Gondola, Apharwat Peak, Frozen Lake
+                    </div>
+                </div>
+                <button class="book-btn" data-destination="Gulmarg">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Tour Card 3: Auli -->
+        <div class="tour-card">
+            <img src="auli_uttk.avif" alt="Auli panoramic view" class="card-image">
+            <div class="p-6">
+                <h2 class="card-title">Auli, Uttarakhand</h2>
+                <p class="card-description">The gentle slopes of Auli offer stunning views of Nanda Devi and make it ideal for beginners learning to ski.</p>
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <span class="detail-label">Location:</span> Auli, Uttarakhand
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Budget:</span> ₹30,000 - ₹55,000
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Transportation:</span> Train to Haridwar/Dehradun, then Cab/Cable Car
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Sites:</span> Auli Artificial Lake, Chattrakund, Joshimath Cable Car
+                    </div>
+                </div>
+                <button class="book-btn" data-destination="Auli">Book Now</button>
+            </div>
+        </div>
+    </main>
+    
+    <script src="winter.js"></script>
+</body>
+</html>

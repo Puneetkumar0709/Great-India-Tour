@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Tour Packages</title>
+    <!-- Link to Tailwind CSS CDN for utility classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Link to external custom stylesheet -->
+    <link rel="stylesheet" href="summer.css">
+</head>
+<body>
+    
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Cool Escapes & Sunny Retreats</h1>
+            <p>Beat the heat with our hand-picked summer destinations across mountains and beaches.</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <!-- Tour Card 1: Ladakh -->
+        <div class="tour-card">
+            <img src="ladhak.avif" alt="Leh-Ladakh high altitude desert" class="card-image">
+            <div class="p-6">
+                <h2 class="card-title">Ladakh - The Land of High Passes</h2>
+                <p class="card-description">Perfect for high-altitude adventure, stunning monasteries, and serene landscapes when the snow melts.</p>
+                <div class="details-grid">
+                    <div class="detail-item"><span class="detail-label">Location:</span> Ladakh, J&K</div>
+                    <div class="detail-item"><span class="detail-label">Budget:</span> ₹35,000 - ₹60,000</div>
+                    <div class="detail-item"><span class="detail-label">Transportation:</span> Flight to Leh, then Jeep/Bike</div>
+                    <div class="detail-item"><span class="detail-label">Sites:</span> Pangong Tso, Nubra Valley, Magnetic Hill</div>
+                </div>
+                <button class="book-btn" data-destination="Ladakh">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Tour Card 2: Darjeeling -->
+        <div class="tour-card">
+            <img src="darjeelin.avif" alt="Darjeeling Tea Gardens and Hills" class="card-image">
+            <div class="p-6">
+                <h2 class="card-title">Darjeeling - Queen of the Hills</h2>
+                <p class="card-description">Enjoy the cool climate, world-famous tea gardens, and the spectacular view of Kanchenjunga.</p>
+                <div class="details-grid">
+                    <div class="detail-item"><span class="detail-label">Location:</span> Darjeeling, West Bengal</div>
+                    <div class="detail-item"><span class="detail-label">Budget:</span> ₹20,000 - ₹35,000</div>
+                    <div class="detail-item"><span class="detail-label">Transportation:</span> Flight to Bagdogra, then Cab/Toy Train</div>
+                    <div class="detail-item"><span class="detail-label">Sites:</span> Tiger Hill, Batasia Loop, Himalayan Zoo</div>
+                </div>
+                <button class="book-btn" data-destination="Darjeeling">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Tour Card 3: Kerala -->
+        <div class="tour-card">
+            <img src="kerla.avif" alt="Kerala Backwaters Houseboat" class="card-image">
+            <div class="p-6">
+                <h2 class="card-title">Kerala - God's Own Country</h2>
+                <p class="card-description">A blend of tranquil backwaters, lush green hills, and beautiful beaches for a relaxing summer break.</p>
+                <div class="details-grid">
+                    <div class="detail-item"><span class="detail-label">Location:</span> Munnar & Alleppey, Kerala</div>
+                    <div class="detail-item"><span class="detail-label">Budget:</span> ₹28,000 - ₹45,000</div>
+                    <div class="detail-item"><span class="detail-label">Transportation:</span> Flight to Cochin, then Cab/Bus</div>
+                    <div class="detail-item"><span class="detail-label">Sites:</span> Munnar Tea Estates, Alleppey Houseboats, Varkala Beach</div>
+                </div>
+                <button class="book-btn" data-destination="Kerala">Book Now</button>
+            </div>
+        </div>
+        
+        <!-- Tour Card 4: Sikkim -->
+        <div class="tour-card">
+            <img src="sikkim.jpeg" alt="Tashiding Monastery in Sikkim" class="card-image">
+            <div class="p-6">
+                <h2 class="card-title">Sikkim - Himalayan Serenity</h2>
+                <p class="card-description">A hidden gem offering pristine natural beauty, ancient Buddhist monasteries, and incredible mountain treks.</p>
+                <div class="details-grid">
+                    <div class="detail-item"><span class="detail-label">Location:</span> Gangtok & Lachung, Sikkim</div>
+                    <div class="detail-item"><span class="detail-label">Budget:</span> ₹30,000 - ₹50,000</div>
+                    <div class="detail-item"><span class="detail-label">Transportation:</span> Flight to Bagdogra, then Cab (permit required)</div>
+                    <div class="detail-item"><span class="detail-label">Sites:</span> Tsomgo Lake, Nathu La Pass, Rumtek Monastery</div>
+                </div>
+                <button class="book-btn" data-destination="Sikkim">Book Now</button>
+            </div>
+        </div>
+        
+        <!-- Tour Card 5: Andaman Islands -->
+        <div class="tour-card">
+            <img src="a and n.jpeg" alt="Radhanagar Beach, Havelock Island" class="card-image">
+            <div class="p-6">
+                <h2 class="card-title">Andaman Islands - Tropical Paradise</h2>
+                <p class="card-description">Clear turquoise waters, white sand beaches, and excellent opportunities for snorkeling and scuba diving.</p>
+                <div class="details-grid">
+                    <div class="detail-item"><span class="detail-label">Location:</span> Port Blair & Havelock Island</div>
+                    <div class="detail-item"><span class="detail-label">Budget:</span> ₹40,000 - ₹75,000 (Includes Flights)</div>
+                    <div class="detail-item"><span class="detail-label">Transportation:</span> Flight to Port Blair, then Ferry</div>
+                    <div class="detail-item"><span class="detail-label">Sites:</span> Radhanagar Beach, Cellular Jail, Scuba Diving Spots</div>
+                </div>
+                <button class="book-btn" data-destination="Andaman">Book Now</button>
+            </div>
+        </div>
+
+    </main>
+    
+    <script src="summer.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+/* Global and Base Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fefcfc; /* Very light, soft background */
+    color: #444;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('https://placehold.co/1200x500/9e0000/ffffff?text=Romantic+Honeymoon+Vibes') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+}
+
+.hero-content {
+    background-color: rgba(158, 0, 0, 0.75); /* Deep Romantic Red with opacity */
+    padding: 2.5rem 4rem;
+    border-radius: 1rem;
+    color: white;
+    border: 3px solid #ffcc00; /* Gold border accent */
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* Tour Card Styling */
+.tour-card {
+    background-color: #fff;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s;
+    border: 2px solid #f9f0f0; /* Soft border */
+}
+
+.tour-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.tour-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+    width: 45%;
+    object-fit: cover;
+    min-height: 280px;
+}
+
+.card-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #9e0000; /* Primary Romantic Red */
+    margin-bottom: 0.5rem;
+}
+
+.card-description {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Ensure the Hotel and Sites span 2 and 3 columns respectively on wider screens */
+.details-grid .detail-item:nth-child(4) { 
+    grid-column: span 2; 
+}
+.details-grid .detail-item:nth-child(5) { 
+    grid-column: span 3; 
+}
+
+
+.detail-item {
+    background-color: #fff4f4; /* Very light pink background */
+    border: 1px solid #ffdddd;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: #ffcc00; /* Gold detail label */
+    display: block;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+}
+
+.book-btn {
+    display: block;
+    width: 100%;
+    padding: 1.2rem;
+    background-color: #ffcc00; /* Gold button accent */
+    color: #9e0000; /* Red text */
+    font-weight: 800;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s, color 0.3s;
+    box-shadow: 0 5px 15px rgba(255, 204, 0, 0.5);
+}
+
+.book-btn:hover {
+    background-color: #ffd700;
+    color: #5d0000;
+    transform: translateY(-3px);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .tour-card,
+    .tour-card:nth-child(even) {
+        flex-direction: column; 
+    }
+
+    .card-image {
+        width: 100%;
+        height: 250px;
+    }
+
+    .card-title {
+        font-size: 1.8rem;
+    }
+    
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Reset grid span for mobile layout */
+    .details-grid .detail-item:nth-child(4),
+    .details-grid .detail-item:nth-child(5) {
+        grid-column: span 1; 
+    }
+    
+    .card-image {
+        width: 100%;
+    }
+}

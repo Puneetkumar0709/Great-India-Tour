@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beach Tour Packages</title>
+    <!-- Link to Tailwind CSS CDN for utility classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Link to external custom stylesheet -->
+    <link rel="stylesheet" href="beach.css">
+</head>
+<body>
+    
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Sun, Sand, and Sea: Beach Paradise</h1>
+            <p>Discover the finest coastlines and turquoise waters for your perfect tropical escape.</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        
+        <!-- Tour Card 1: Goa (Party & Relaxation) -->
+        <div class="tour-card">
+            <img src="goa beach.jpeg" alt="Sun setting over Palolem Beach, Goa" class="card-image">
+            <div class="p-6">
+                <h2 class="card-title">Goa - The Classic Beach Destination</h2>
+                <p class="card-description">Famous for its vibrant nightlife, Portuguese heritage, and varied beaches—from bustling Calangute to serene Palolem.</p>
+                <div class="details-grid">
+                    <div class="detail-item"><span class="detail-label">Location:</span> West Coast of India</div>
+                    <div class="detail-item"><span class="detail-label">Budget:</span> ₹25,000 - ₹50,000</div>
+                    <div class="detail-item"><span class="detail-label">Transportation:</span> Flight to Dabolim/MOPA or Train to Madgaon</div>
+                    <div class="detail-item"><span class="detail-label">Sites:</span> Baga Beach, Old Goa Churches, Dudhsagar Falls</div>
+                </div>
+                <button class="book-btn" data-destination="Goa">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Tour Card 2: Havelock, Andaman (Pristine Waters) -->
+        <div class="tour-card">
+            <img src="a and n beach.jpeg" alt="Clear blue waters of Havelock Island" class="card-image">
+            <div class="p-6">
+                <h2 class="card-title">Havelock Island - Tropical Seclusion</h2>
+                <p class="card-description">Home to Asia's best beaches. Perfect for snorkeling, scuba diving, and relaxing in pristine, quiet surroundings.</p>
+                <div class="details-grid">
+                    <div class="detail-item"><span class="detail-label">Location:</span> Andaman & Nicobar Islands</div>
+                    <div class="detail-item"><span class="detail-label">Budget:</span> ₹40,000 - ₹75,000 (Incl. flights)</div>
+                    <div class="detail-item"><span class="detail-label">Transportation:</span> Flight to Port Blair, then Ferry</div>
+                    <div class="detail-item"><span class="detail-label">Sites:</span> Radhanagar Beach, Elephant Beach, Scuba Spots</div>
+                </div>
+                <button class="book-btn" data-destination="Havelock">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Tour Card 3: Varkala, Kerala (Cliff Beaches) -->
+        <div class="tour-card">
+            <img src="varkal.jpeg" alt="Varkala Cliff and Beach" class="card-image">
+            <div class="p-6">
+                <h2 class="card-title">Varkala - The Cliffside Oasis</h2>
+                <p class="card-description">A unique beach experience where cliffs meet the Arabian Sea. Known for mineral springs, yoga, and relaxed cafes.</p>
+                <div class="details-grid">
+                    <div class="detail-item"><span class="detail-label">Location:</span> Kerala, South India</div>
+                    <div class="detail-item"><span class="detail-label">Budget:</span> ₹20,000 - ₹35,000</div>
+                    <div class="detail-item"><span class="detail-label">Transportation:</span> Flight to Trivandrum, then Train/Cab</div>
+                    <div class="detail-item"><span class="detail-label">Sites:</span> Varkala Cliff, Papanasam Beach, Janardanaswamy Temple</div>
+                </div>
+                <button class="book-btn" data-destination="Varkala">Book Now</button>
+            </div>
+        </div>
+        
+        <!-- Tour Card 4: Gokarna, Karnataka (Temple Town Beaches) -->
+        <div class="tour-card">
+            <img src="gokaran.jpeg" alt="Om Beach in Gokarna" class="card-image">
+            <div class="p-6">
+                <h2 class="card-title">Gokarna - The Tranquil Alternative</h2>
+                <p class="card-description">A holy town with four pristine, naturally-shaped beaches (Om Beach, Half Moon Beach) ideal for quiet backpacking and trekking.</p>
+                <div class="details-grid">
+                    <div class="detail-item"><span class="detail-label">Location:</span> Karnataka, West Coast</div>
+                    <div class="detail-item"><span class="detail-label">Budget:</span> ₹18,000 - ₹30,000</div>
+                    <div class="detail-item"><span class="detail-label">Transportation:</span> Train to Gokarna Road or Cab from Goa</div>
+                    <div class="detail-item"><span class="detail-label">Sites:</span> Om Beach, Mahabaleshwar Temple, Kudle Beach</div>
+                </div>
+                <button class="book-btn" data-destination="Gokarna">Book Now</button>
+            </div>
+        </div>
+        
+        <!-- Tour Card 5: Tarkarli, Maharashtra (Water Sports) -->
+        <div class="tour-card">
+            <img src="tarakali.jpeg" alt="Tarkarli Scuba Diving" class="card-image">
+            <div class="p-6">
+                <h2 class="card-title">Tarkarli - Coastal Maharashtra</h2>
+                <p class="card-description">Known for its white sands, clear waters, and affordable water sports, including scuba diving and snorkeling near Sindhudurg Fort.</p>
+                <div class="details-grid">
+                    <div class="detail-item"><span class="detail-label">Location:</span> Maharashtra, Konkan Coast</div>
+                    <div class="detail-item"><span class="detail-label">Budget:</span> ₹20,000 - ₹35,000</div>
+                    <div class="detail-item"><span class="detail-label">Transportation:</span> Train to Kudal/Sawantwadi, then Bus/Cab</div>
+                    <div class="detail-item"><span class="detail-label">Sites:</span> Tarkarli Beach, Sindhudurg Fort, Devbagh Sangam</div>
+                </div>
+                <button class="book-btn" data-destination="Tarkarli">Book Now</button>
+            </div>
+        </div>
+
+    </main>
+    
+    <script src="beach.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Safari Tours</title>
+    <!-- Link to Tailwind CSS CDN for utility classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Link to external custom stylesheet -->
+    <link rel="stylesheet" href="wildlife.css">
+</head>
+<body>
+    
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Wildlife Safaris: Into the Wild</h1>
+            <p>Track the Royal Bengal Tiger, spot the One-Horned Rhino, and explore diverse Indian jungles.</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        
+        <!-- Tour Card 1: Ranthambore (Rajasthan) -->
+        <div class="tour-card">
+            <img src="https://placehold.co/600x400/8c0303/ffffff?text=Ranthambore+Tiger" alt="Tiger in Ranthambore National Park" class="card-image">
+            <div class="p-6">
+                <h2 class="card-title">Ranthambore National Park</h2>
+                <p class="card-description">Famous for its tiger population and historical fort, Ranthambore offers one of the best chances to see a tiger in daylight.</p>
+                <div class="details-grid">
+                    <div class="detail-item"><span class="detail-label">Location:</span> Rajasthan</div>
+                    <div class="detail-item"><span class="detail-label">Budget:</span> ₹35,000 - ₹60,000</div>
+                    <div class="detail-item"><span class="detail-label">Transportation:</span> Train to Sawai Madhopur, then Cab</div>
+                    <div class="detail-item"><span class="detail-label">Sites:</span> Tiger Safaris, Ranthambore Fort, Padam Talao</div>
+                </div>
+                <button class="book-btn" data-destination="Ranthambore">Book Safari</button>
+            </div>
+        </div>
+
+        <!-- Tour Card 2: Jim Corbett (Uttarakhand) -->
+        <div class="tour-card">
+            <img src="https://placehold.co/600x400/004d40/ffffff?text=Corbett+Jungle" alt="Jim Corbett National Park river" class="card-image">
+            <div class="p-6">
+                <h2 class="card-title">Jim Corbett National Park</h2>
+                <p class="card-description">India's oldest national park, known for its picturesque landscape, dense forests, and elephant herds alongside tigers.</p>
+                <div class="details-grid">
+                    <div class="detail-item"><span class="detail-label">Location:</span> Uttarakhand (Himalayan Foothills)</div>
+                    <div class="detail-item"><span class="detail-label">Budget:</span> ₹30,000 - ₹55,000</div>
+                    <div class="detail-item"><span class="detail-label">Transportation:</span> Train to Ramnagar, then Cab</div>
+                    <div class="detail-item"><span class="detail-label">Sites:</span> Dhikala Zone, Bijrani Safari, Kosi River</div>
+                </div>
+                <button class="book-btn" data-destination="Corbett">Book Safari</button>
+            </div>
+        </div>
+
+        <!-- Tour Card 3: Bandhavgarh (Madhya Pradesh) -->
+        <div class="tour-card">
+            <img src="https://placehold.co/600x400/4caf50/ffffff?text=Bandhavgarh+Forest" alt="Bandhavgarh National Park forest" class="card-image">
+            <div class="p-6">
+                <h2 class="card-title">Bandhavgarh National Park</h2>
+                <p class="card-description">Boasts the highest density of the Royal Bengal Tiger population in the world, set against a backdrop of ancient ruins.</p>
+                <div class="details-grid">
+                    <div class="detail-item"><span class="detail-label">Location:</span> Madhya Pradesh (Central India)</div>
+                    <div class="detail-item"><span class="detail-label">Budget:</span> ₹40,000 - ₹70,000</div>
+                    <div class="detail-item"><span class="detail-label">Transportation:</span> Flight to Jabalpur (JLR), then Cab</div>
+                    <div class="detail-item"><span class="detail-label">Sites:</span> Tala Zone, Bandhavgarh Fort, Sheshya Sai Statue</div>
+                </div>
+                <button class="book-btn" data-destination="Bandhavgarh">Book Safari</button>
+            </div>
+        </div>
+        
+        <!-- Tour Card 4: Gir Forest (Gujarat) -->
+        <div class="tour-card">
+            <img src="https://placehold.co/600x400/ff9800/ffffff?text=Gir+Lion" alt="Asiatic Lion in Gir Forest" class="card-image">
+            <div class="p-6">
+                <h2 class="card-title">Gir Forest National Park</h2>
+                <p class="card-description">The only place in the world where the majestic Asiatic Lion can be seen in its natural habitat.</p>
+                <div class="details-grid">
+                    <div class="detail-item"><span class="detail-label">Location:</span> Gujarat (West India)</div>
+                    <div class="detail-item"><span class="detail-label">Budget:</span> ₹30,000 - ₹50,000</div>
+                    <div class="detail-item"><span class="detail-label">Transportation:</span> Flight to Diu (DIU) or Rajkot, then Cab</div>
+                    <div class="detail-item"><span class="detail-label">Sites:</span> Devalia Safari Park, Sasan Gir, Kamleshwar Dam</div>
+                </div>
+                <button class="book-btn" data-destination="Gir">Book Safari</button>
+            </div>
+        </div>
+        
+        <!-- Tour Card 5: Kaziranga (Assam) -->
+        <div class="tour-card">
+            <img src="https://placehold.co/600x400/3949ab/ffffff?text=Kaziranga+Rhino" alt="One-Horned Rhino in Kaziranga" class="card-image">
+            <div class="p-6">
+                <h2 class="card-title">Kaziranga National Park</h2>
+                <p class="card-description">A UNESCO World Heritage Site famous for protecting two-thirds of the world's population of the Great One-Horned Rhinoceros.</p>
+                <div class="details-grid">
+                    <div class="detail-item"><span class="detail-label">Location:</span> Assam (Northeast India)</div>
+                    <div class="detail-item"><span class="detail-label">Budget:</span> ₹45,000 - ₹75,000</div>
+                    <div class="detail-item"><span class="detail-label">Transportation:</span> Flight to Jorhat/Guwahati, then Cab/Bus</div>
+                    <div class="detail-item"><span class="detail-label">Sites:</span> Central/Western Range Safari, Elephant Safaris</div>
+                </div>
+                <button class="book-btn" data-destination="Kaziranga">Book Safari</button>
+            </div>
+        </div>
+
+    </main>
+    
+    <script src="wildlife.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+/* Global and Base Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4f7; /* Light gray-blue background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('https://placehold.co/1200x500/004d40/ffffff?text=Safari+Adventure+Collage') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+}
+
+.hero-content {
+    background-color: rgba(76, 175, 80, 0.8); /* Forest Green background with opacity */
+    padding: 2.5rem 4rem;
+    border-radius: 1rem;
+    color: white;
+    border: 3px solid #ff9800; /* Deep Orange accent border */
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* Tour Card Styling */
+.tour-card {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    border: 1px solid #ddd;
+}
+
+.tour-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.tour-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+    width: 40%;
+    object-fit: cover;
+    min-height: 250px;
+}
+
+.card-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #004d40; /* Primary Dark Teal/Green */
+    margin-bottom: 0.5rem;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.detail-item {
+    background-color: #f1f8e9; /* Very light green detail background */
+    border: 1px solid #c8e6c9;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: #ff9800; /* Deep Orange detail label */
+    display: block;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+}
+
+.book-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #ff9800; /* Deep Orange button accent */
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 5px 10px rgba(255, 152, 0, 0.5);
+}
+
+.book-btn:hover {
+    background-color: #fb8c00;
+    transform: translateY(-2px);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .tour-card,
+    .tour-card:nth-child(even) {
+        flex-direction: column; /* Stack image and text vertically */
+    }
+
+    .card-image {
+        width: 100%;
+        height: 250px;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+    
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+}
