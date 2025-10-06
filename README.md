@@ -7,7 +7,7 @@ Indian Tour Website | IBM Project | HTML, CSS, JavaScript
 
 # Great-India-Tour
 
-**Project Link**: **  
+**Project Link**: *https://github.com/Puneetkumar0709/Great-India-Tour*  
 **Description**:"Your perfect Indian adventure starts here. Great India Tour offers expertly curated itineraries across the subcontinent. Explore, experience, and fall in love with India." 
 
 ---
