@@ -54,7 +54,6 @@ Contributions are welcome!
 - Push to the branch (git push origin main)
 - Open a Pull Request
 
-📄 License
-This project is licensed under the MIT License. See the LICENSE file for details.
+
 
 ## Thanks for visiting this repo!
